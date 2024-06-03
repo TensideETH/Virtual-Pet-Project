@@ -1,0 +1,22 @@
+// Example of a virtual pet program in Kotlin
+class VirtualPet(var name: String) {
+    var hunger = 50
+    var happiness = 50
+
+    fun feed() {
+        hunger -= 10
+        happiness += 10
+    }
+
+    fun play() {
+        happiness += 20
+    }
+}
+
+fun main() {
+    val myPet = VirtualPet("Buddy")
+    myPet.feed()
+    myPet.play()
+    println(myPet)
+}
+
