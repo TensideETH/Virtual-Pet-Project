@@ -1,0 +1,22 @@
+// Example of a virtual pet program in JavaScript
+class VirtualPet {
+    constructor(name) {
+        this.name = name;
+        this.hunger = 50;
+        this.happiness = 50;
+    }
+
+    feed() {
+        this.hunger -= 10;
+        this.happiness += 10;
+    }
+
+    play() {
+        this.happiness += 20;
+    }
+}
+
+const myPet = new VirtualPet('Buddy');
+myPet.feed();
+myPet.play();
+console.log(myPet);
